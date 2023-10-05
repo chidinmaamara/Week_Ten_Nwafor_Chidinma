@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import InputField from './component/InputField';
 
 function App() {
-  return (
+
+   return (
     <div className="App">
-      
+      <InputField/>
     </div>
   );
 }

@@ -1,10 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import LogIn from './component/LogIn';
+import DashBoard from './component/DashBoard';
+import { useState } from 'react';
 
 function App() {
-  return (
+
+  const[isLoggedIn, setIsLoggedIn] = useState(false)
+
+  const changeStatus = ()=> setIsLoggedIn(!isLoggedIn)
+  
+   return (
     <div className="App">
-      
+     {isLoggedIn? <DashBoard/> : <LogIn swap= {changeStatus}/>}
     </div>
   );
 }
