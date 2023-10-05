@@ -1,10 +1,13 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import DataFetcher from './component/DataFetcher';
+
 
 function App() {
-  return (
+
+   return (
     <div className="App">
-      
+      <DataFetcher/>
     </div>
   );
 }
